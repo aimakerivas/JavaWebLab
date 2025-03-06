@@ -1,0 +1,7 @@
+Marry,Wang,20
+Danny,Chen,25
+DRose,Lin,22
+Johnson,Lee,18
+William,Tsai,27
+小明,周,12
+小華,沈,15

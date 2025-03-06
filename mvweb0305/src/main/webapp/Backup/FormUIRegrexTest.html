@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Test</title>
+</head>
+<body>
+    <h2>HTML5 Input Types Test</h2>
+    <form action="TestLogin.jsp" method="post">
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text" pattern="[A-Za-z0-9]{3,20}" title="Only letters and numbers, 3-20 characters"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern=".{6,}" title="At least 6 characters"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email"><br><br>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url" pattern="https?://.*" title="Enter a valid URL starting with http:// or https://"><br><br>
+
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" name="tel" pattern="\d{10,15}" title="Enter a valid phone number (10-15 digits)"><br><br>
+
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" min="1" max="100" title="Enter a number between 1 and 100"><br><br>
+
+        <label for="range">Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="datetime-local">Datetime-local:</label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local"><br><br>
+
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month"><br><br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+
+        <label for="radio">Radio:</label>
+        <input type="radio" id="radio" name="radio"><br><br>
+
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file" accept=".jpg,.png,.pdf" title="Only JPG, PNG, or PDF files"><br><br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" pattern=".{3,}" title="Enter at least 3 characters"><br><br>
+
+        <label for="hidden">Hidden (not visible):</label>
+        <input type="hidden" id="hidden" name="hidden" value="hiddenValue"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
