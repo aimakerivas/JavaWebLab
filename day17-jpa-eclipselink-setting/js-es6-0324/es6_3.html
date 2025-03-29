@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS ES6 Html</title>
+    <style></style>
+
+</head>
+
+<body>
+    <h1>ES6 Script</h1>
+    <button onclick="func()">Object Literal</button>
+    <button onclick="func2()">array destucturing</button>
+    <script>
+        function myarray()
+        {
+            return [7,8,9];
+        }
+        const func = () => {
+            var username="Danny";
+            var age=20;
+            var obj={"username":username,"age":age};
+            var obj2={"user":username,age};
+            console.log(obj);
+            console.log(obj2);
+        };
+        const func2= ()=>{
+            [a,b,c]=myarray();
+            console.log("a:"+a);
+            console.log("b:"+b);
+            console.log("c:"+c);
+        };
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Form</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="./js/employeescript.js"></script>
+</head>
+<body>
+<h3>
+<button id="btnQuery">Get All Employees</button>&nbsp;<button id="btnAdd">Add Employee</button>&nbsp;
+<button id="btnEdit">Update Employee</button>
+<form>
+ <table width="30%">
+   <tr>
+    <td>Employee ID:</td><td><input type="text" id="employeeNumber" value=""/></td></tr>
+   <tr>
+    <td>First Name:</td><td><input type="text" id="firstName" value=""/></td></tr>   
+   <tr>
+    <td>Last Name:</td><td><input type="text" id="lastName" value=""/></td></tr>
+   <tr>
+    <td>email:</td><td><input type="text" id="email" value=""/></td></tr>
+   <tr>
+    <td>extension:</td><td><input type="text" id="extension" value=""/></td></tr>
+   <tr>
+    <td>officeCode:</td><td><input type="text" id="officeCode" value=""/></td></tr>
+   <tr>
+    <td>Report To:</td><td><input type="text" id="report" value=""/></td></tr>
+   <tr>
+    <td>JobTitle:</td><td><input type="text" id="title" value=""/></td></tr>
+   </table>    
+</form>
+<p>
+<table id="employeeTB" width="80%">
+  <tr><th>員工編號</th><th>員工名字</th><th>員工姓氏</th><th>員工分機</th><th>電子郵件</th><th>辦公室代號</th><th>員工主管</th><th>員工職稱</th>
+  </tr>
+</table>
+</h3>
+</body>
+</html>

@@ -1,0 +1,64 @@
+77% of storage used … If you run out, you can't create, edit, and upload files. Get 100 GB of storage for NT$65.00 NT$16.25 for 1 month.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS ES6 Html</title>
+    <style></style>
+
+</head>
+
+<body>
+    <h1>ES6 Script</h1>
+    <button onclick="func()">Object Literal</button>
+    <button onclick="func2()">array destucturing</button>
+    <button onclick="func3()">obj args</button>
+    <button onclick="func4()">template literal</button>
+    <script>
+        function myarray() {
+            return [7, 8, 9];
+        }
+        const func = () => {
+            var username = "Danny";
+            var age = 20;
+            var obj = { "username": username, "age": age };
+            var obj2 = { "user": username, age };
+            console.log(obj);
+            console.log(obj2);
+        };
+        const func2 = () => {
+            [a, b, c] = myarray();
+            console.log("a:" + a);
+            console.log("b:" + b);
+            console.log("c:" + c);
+        };
+
+        function drawChart({ size = 'big', cords = { x: 0, y: 0 }, radius = 25 } = {}) {
+            console.log(size, cords, radius);
+        }
+       
+        // 輸出 big {x: 18, y: 30} 30
+       const func3= ()=>  drawChart({
+            cords: { x: 18, y: 18 },
+            radius: 30
+        });
+
+        const visitMessage = (cus) => {
+            // 物件解構
+            const { age, name } = cus;
+            // 字串模板
+            const text = age < 18 ?   `Dear ${name}, you are under age:${age}`  : `Welcome, ${name}:${age}!`;
+            return text;
+        };
+
+       const func4=()=>{
+        var txt = visitMessage({ "name": "Mary", "age": 20 });
+        alert(txt);
+
+       };
+    </script>
+
+</body>
+
+</html>

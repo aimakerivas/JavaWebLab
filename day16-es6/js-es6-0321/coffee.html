@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta></meta>        
+        <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="./js/coffeeAjax.js"></script>
+    </head>
+<body>
+<h2>新增咖啡資料</h2>
+<form id="coffeeForm">
+    <label>咖啡名稱：</label>
+    <input id="cofName"><br>
+
+    <label>供應商ID：</label>
+    <input id="supId"><br>
+
+    <label>單價：</label>
+    <input id="price"><br>
+
+    <label>銷售量：</label>
+    <input id="sales"><br>
+
+    <label>總額：</label>
+    <input id="total"><br>
+
+    <button type="button" onclick="addCoffee()">新增咖啡</button>
+</form>
+
+<hr>
+<div id="coffeeList">
+    <!-- 這裡會顯示所有咖啡清單 -->
+</div>
+</body>
+</html>
